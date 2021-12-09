@@ -31,16 +31,19 @@ body {
 .fire-location-icon{
   font-size: 2rem;
   color: red;
+  cursor: pointer;
 }
 
 .severe-weather-location-icon{
   font-size: 2rem;
   color: blue;
+  cursor: pointer;
 }
 
 .volcano-location-icon{
   font-size: 2rem;
   color: orangered;
+  cursor: pointer;
 }
 
 .loader {
