@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react'
-import seaAndLakeLocationIcon from '@iconify/icons-mdi/ice-skate'
+import seaAndLakeLocationIcon from '@iconify/icons-mdi/cup-ice'
 
 const SeaAndLakeLocationMarker = ({ lat, lng, date, onClick }) => {
     return (
