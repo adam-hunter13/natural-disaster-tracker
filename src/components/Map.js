@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import GoogleMapReact from 'google-map-react'
+import LocationInfoBox from './LocationInfoBox'
+
 import FireLocationMarker from './FireLocationMarker'
 import VolcanoLocationMarker from './VolcanoLocationMarker'
 import StormLocationMarker from './StormLocationMarker'
@@ -13,7 +15,6 @@ import SeaAndLakeLocationMarker from './SeaAndLakeLocationMarker'
 import SnowLocationMarker from './SnowLocationMarker'
 import TemperatureExtremesLocationMarker from './TemperatureExtremesLocationMarker'
 import WaterColorLocationMarker from './WaterColorLocationMarker'
-import LocationInfoBox from './LocationInfoBox'
 
 
 
@@ -114,7 +115,7 @@ const Map = ({ eventData, center, zoom }) => {
     return (
         <div className="map">
             <GoogleMapReact
-                bootstrapURLKeys={{ key: '' }}
+                bootstrapURLKeys={{ key: 'AIzaSyCt7q43-bOWXn4X_lrMJmQ7giPE8UAUuek' }}
                 defaultCenter={ center }
                 defaultZoom={ zoom }
             >
