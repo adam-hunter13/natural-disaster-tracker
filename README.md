@@ -2,6 +2,8 @@
 
 ## Simply scroll around the world to see current and recent natural disasters!
 
+## https://hardcore-curie-04e96a.netlify.app/
+
 ## 1-Description
 
 This app is a natural disaster tracker that utilizes Google Maps API, and the NASA API. This app allows users to move around the globe and see current and recent natural disasters identified by a specific icon. Upon clicking on any icon, the user will see the details of icon which identify the type of natural disaster, and the date of the event. 
