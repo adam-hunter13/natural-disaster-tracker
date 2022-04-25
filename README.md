@@ -1,6 +1,6 @@
 # Natural Disaster Tracker
 
-## Simply scroll around the world and see current and recent natural disasters!
+## Simply scroll around the world to see current and recent natural disasters!
 
 ## 1-Description
 
