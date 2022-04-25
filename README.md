@@ -72,3 +72,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 # Natural Disaster Tracker
+
+## Simply take a look around the world to see current and recent natural disasters!
