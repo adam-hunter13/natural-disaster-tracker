@@ -26,6 +26,6 @@ The most challenging part of this project was getting the NASA API to work. The 
 
 ## 4-Issues
 
-To prevent any billing to my account, I have closed my API credentials. Because of this, no map will populate with my hosted site. To fix this, simply sign up for your own Google Maps API and replace my key with yours.
+To prevent any billing to my account, I have closed my API credentials. Because of this, no map will populate with my hosted site. To fix this, simply sign up for your own Google Maps API and replace my key with yours in the Map.js componenet.
 
 # Thanks for visiting!
