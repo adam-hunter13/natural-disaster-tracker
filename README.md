@@ -1,71 +1,31 @@
-# Getting Started with Create React App
+# Natural Disaster Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Simply scroll around the world to see current and recent natural disasters!
 
-## Available Scripts
+## https://hardcore-curie-04e96a.netlify.app/
 
-In the project directory, you can run:
+## 1-Description
 
-### `npm start`
+This app is a natural disaster tracker that utilizes Google Maps API, and the NASA API. This app allows users to move around the globe and see current and recent natural disasters identified by a specific icon. Upon clicking on any icon, the user will see the details of icon which identify the type of natural disaster, and the date of the event. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 2-Technologies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This project utilizes the following technologies
 
-### `npm test`
+  - React
+  - HTML
+  - CSS
+  - Iconify
+  - Google Maps API
+  - NASA API
+  - Netlify
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3-Challenges
 
-### `npm run build`
+The most challenging part of this project was getting the NASA API to work. The NASA API was not connecting as I came close to finishing the project. Throughout the project the API had been responsive but when it came time to deploy and showcase, no pionts were being identified on the map. After attempting to contact NASA to see if they had any idea why the API was no longer working, I attempted to change my fetch requests to axios requests, but still provided no success. Evently I was able to get everything working by trying various things and online resources. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 4-Issues
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To prevent any billing to my account, I have closed my API credentials. Because of this, no map will populate with my hosted site. To fix this, simply sign up for your own Google Maps API and replace my key with yours.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# natural-disaster-tracker
+# Thanks for visiting!
