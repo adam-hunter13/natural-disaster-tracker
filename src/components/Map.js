@@ -115,7 +115,7 @@ const Map = ({ eventData, center, zoom }) => {
     return (
         <div className="map">
             <GoogleMapReact
-                bootstrapURLKeys={{ key: 'AIzaSyCt7q43-bOWXn4X_lrMJmQ7giPE8UAUuek' }}
+                bootstrapURLKeys={{ key: '' }}
                 defaultCenter={ center }
                 defaultZoom={ zoom }
             >
