@@ -1,39 +1,50 @@
 import { useState, useEffect } from 'react'
-import Map from "./components/Map";
+import Map from "./components/Map"
 import Loader from "./components/Loader"
 import Header from './components/Header'
-import Legend from './components/Legend';
-import events from './components/events'
-
+import Legend from './components/Legend'
+import DateFilter from './components/DateFilter'
 
 function App() {
-  const [eventData, setEventData] = useState(events)
+  const [eventData, setEventData] = useState([])
   const [loading, setLoading] = useState(false)
+  const [startDate, setStartDate] = useState('')
+  const [endDate, setEndDate] = useState('')
 
-  //   IF NASA GETS BACK WITH INFO UNBLOCK LINES 15-25 IN
-  // useEffect(() => {
-  //   const fetchEvents = async () => {
-  //     setLoading(true)
-  //     const res = await fetch('https://eonet.gsfc.nasa.gov/api/v2.1/events?api_key=Tn92YFI4mOre4i9L9c43C6tC3hSeqZ1uxOM2iey8')
-  //     console.log(res)
-  //     const { events } = await res.json()
+  const fetchEvents = async (start = '', end = '') => {
+    setLoading(true)
+    let url = 'https://eonet.gsfc.nasa.gov/api/v3/events?'
+    if (start) url += `&start=${start}`
+    if (end) url += `&end=${end}`
+    const res = await fetch(url)
+    const { events } = await res.json()
+    setEventData(events)
+    setLoading(false)
+  }
 
-  //     setEventData(events)
-  //     setLoading(false)
-  //   }
+  useEffect(() => {
+    fetchEvents()
+  }, [])
 
-  //   fetchEvents ()
-    
-  // }, [])
- 
-  
   return (
     <div>
       <Header />
-      { !loading ? <Map eventData={eventData} /> : <Loader /> }
+      <DateFilter
+        startDate={startDate}
+        endDate={endDate}
+        onStartChange={setStartDate}
+        onEndChange={setEndDate}
+        onApply={() => fetchEvents(startDate, endDate)}
+        onClear={() => {
+          setStartDate('')
+          setEndDate('')
+          fetchEvents()
+        }}
+      />
+      {!loading ? <Map eventData={eventData} /> : <Loader />}
       <Legend />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
